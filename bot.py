@@ -39,7 +39,7 @@ def main_keyboard(user_id):
     )
 
     # Payment option
-    kb.add(InlineKeyboardButton("⚡️ Instant Unlock (Paid)", url=PAYMENT_LINK))
+    kb.add(InlineKeyboardButton("⚡️ Instant Unlock (25.00php)", url=PAYMENT_LINK))
 
     # Unlock link logic
     if users[user_id]["unlocked"]:
