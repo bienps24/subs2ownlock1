@@ -34,7 +34,7 @@ def main_keyboard(user_id):
     # Show channels only
     kb.add(
         InlineKeyboardButton("🔴 Subscribe Channel 1", url=YT1),
-        InlineKeyboardButton("🔴 Subscribe Channel 2", url=YT2),
+        InlineKeyboardButton("🔴 Register", url=YT2),
         InlineKeyboardButton("🔔 Subscribe Channel 3", url=YT3),
     )
 
@@ -52,7 +52,7 @@ def main_keyboard(user_id):
 def text_status(user_id):
     return (
         "🔓 *Unlock Link*\n"
-        "Please subscribe to the channels above.\n"
+        "Please subscribe to the channels above and Unlock VIP Channel.\n"
         "⏳ Unlock available after 999 seconds..."
     )
 
@@ -86,7 +86,7 @@ async def start(message: types.Message):
 
 @dp.callback_query_handler(lambda c: c.data == "locked")
 async def locked(call: types.CallbackQuery):
-    await call.answer("❌ Please wait 999 seconds or pay for instant unlock.", show_alert=True)
+    await call.answer("❌ Please wait 999 seconds or pay for instant unlock or Subscribe to auto join.", show_alert=True)
 
 # ADMIN COMMAND
 @dp.message_handler(commands=["approve"])
