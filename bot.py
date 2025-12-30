@@ -20,7 +20,7 @@ YT1 = "https://youtube.com/@setzis-magicworld?si=tBXL1YWZl-ndhvhm"
 YT2 = "https://gperya.com/?outValue=llIdkrI&appId=com.waiudieay.sxkzriagxs&install_referrer=h5&aid=39&share_referrer=101"
 YT3 = "https://youtube.com/@xuezhongwen-y7b?si=ikM1rLMOmdzKc1WT"
 UNLOCK_LINK = "https://t.me/+21PYHt4_VQU4Njc1"
-PAYMENT_LINK = "https://connecttelegram.blogspot.com/?m=1"
+PAYMENT_LINK = "https://t.me/reaks_14bot/pay"
 
 # USER DATA (in-memory)
 users = {}
