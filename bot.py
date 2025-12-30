@@ -52,8 +52,8 @@ def main_keyboard(user_id):
 def text_status(user_id):
     return (
         "🔓 *Unlock Link*\n"
-        "Please subscribe to the channels above and Unlock VIP Channel.\n"
-        "⏳ Unlock available after 999 seconds..."
+        "Please subscribe to the channels below and Unlock VIP Channel.\n"
+        "⏳ Or wait to Unlock after 999 seconds..."
     )
 
 async def unlock_after_delay(user_id):
