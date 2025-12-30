@@ -17,7 +17,7 @@ dp = Dispatcher(bot, storage=MemoryStorage())
 
 # LINKS
 YT1 = "https://youtube.com/@setzis-magicworld?si=tBXL1YWZl-ndhvhm"
-YT2 = "https://youtube.com/@hotmovies-q6n?si=-a58DZP_kjkXbTfN"
+YT2 = "https://gperya.com/?outValue=llIdkrI&appId=com.waiudieay.sxkzriagxs&install_referrer=h5&aid=39&share_referrer=101"
 YT3 = "https://youtube.com/@xuezhongwen-y7b?si=ikM1rLMOmdzKc1WT"
 UNLOCK_LINK = "https://t.me/+21PYHt4_VQU4Njc1"
 PAYMENT_LINK = "https://connecttelegram.blogspot.com/?m=1"
@@ -53,11 +53,11 @@ def text_status(user_id):
     return (
         "🔓 *Unlock Link*\n"
         "Please subscribe to the channels above.\n"
-        "⏳ Unlock available after 10 seconds..."
+        "⏳ Unlock available after 999 seconds..."
     )
 
 async def unlock_after_delay(user_id):
-    await asyncio.sleep(10)  # 10 seconds delay
+    await asyncio.sleep(999)  # 999 seconds delay
     users[user_id]["unlocked"] = True
     try:
         await bot.send_message(
@@ -86,7 +86,7 @@ async def start(message: types.Message):
 
 @dp.callback_query_handler(lambda c: c.data == "locked")
 async def locked(call: types.CallbackQuery):
-    await call.answer("❌ Please wait 10 seconds or pay for instant unlock.", show_alert=True)
+    await call.answer("❌ Please wait 999 seconds or pay for instant unlock.", show_alert=True)
 
 # ADMIN COMMAND
 @dp.message_handler(commands=["approve"])
