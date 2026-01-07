@@ -18,7 +18,6 @@ dp = Dispatcher(bot, storage=MemoryStorage())
 # LINKS
 YT1 = "https://youtube.com/@setzis-magicworld?si=tBXL1YWZl-ndhvhm"
 YT2 = "https://gperya.com/?outValue=llIdkrI&appId=com.waiudieay.sxkzriagxs&install_referrer=h5&aid=39&share_referrer=101"
-YT3 = "https://youtube.com/@xuezhongwen-y7b?si=ikM1rLMOmdzKc1WT"
 UNLOCK_LINK = "https://t.me/+21PYHt4_VQU4Njc1"
 PAYMENT_LINK = "https://t.me/reaks_14bot/pay"
 
@@ -33,9 +32,8 @@ def main_keyboard(user_id):
     kb = InlineKeyboardMarkup(row_width=1)
     # Show channels only
     kb.add(
-        InlineKeyboardButton("🔴 Subscribe Channel 1", url=YT1),
+        InlineKeyboardButton("🔴 Subscribe Now", url=YT1),
         InlineKeyboardButton("🔴 Register", url=YT2),
-        InlineKeyboardButton("🔔 Subscribe Channel 3", url=YT3),
     )
 
     # Payment option
