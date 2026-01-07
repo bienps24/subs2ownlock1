@@ -47,8 +47,8 @@ def main_keyboard(user_id):
 
 def text_status(user_id):
     return (
-        "🔓 *Unlock Link*\n"
-        "Please subscribe to the channels below and Unlock VIP Channel.\n"
+        "🔓 *ᴜɴʟᴏᴄᴋ ʟɪᴠᴇꜱʜᴏᴡ*\n"
+        "Tap 𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 and Unlock 2 VIP Channels.\n"
         "⏳ Or wait to Unlock after 24hours..."
     )
 
