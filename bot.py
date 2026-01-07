@@ -51,11 +51,11 @@ def text_status(user_id):
     return (
         "🔓 *Unlock Link*\n"
         "Please subscribe to the channels below and Unlock VIP Channel.\n"
-        "⏳ Or wait to Unlock after 999 seconds..."
+        "⏳ Or wait to Unlock after 24hours..."
     )
 
 async def unlock_after_delay(user_id):
-    await asyncio.sleep(999)  # 999 seconds delay
+    await asyncio.sleep(86400)  # 999 seconds delay
     users[user_id]["unlocked"] = True
     try:
         await bot.send_message(
