@@ -17,7 +17,6 @@ dp = Dispatcher(bot, storage=MemoryStorage())
 
 # LINKS
 YT1 = "https://youtube.com/@setzis-magicworld?si=tBXL1YWZl-ndhvhm"
-YT2 = "https://gperya.com/?outValue=llIdkrI&appId=com.waiudieay.sxkzriagxs&install_referrer=h5&aid=39&share_referrer=101"
 UNLOCK_LINK = "https://t.me/+21PYHt4_VQU4Njc1"
 PAYMENT_LINK = "https://t.me/reaks_14bot/pay"
 
@@ -33,7 +32,6 @@ def main_keyboard(user_id):
     # Show channels only
     kb.add(
         InlineKeyboardButton("🔴 Subscribe Now", url=YT1),
-        InlineKeyboardButton("🔴 Register", url=YT2),
     )
 
     # Payment option
@@ -41,9 +39,9 @@ def main_keyboard(user_id):
 
     # Unlock link logic
     if users[user_id]["unlocked"]:
-        kb.add(InlineKeyboardButton("🔓 Unlock Link", url=UNLOCK_LINK))
+        kb.add(InlineKeyboardButton("🔓 Unlock 2 VIP CHANNELS", url=UNLOCK_LINK))
     else:
-        kb.add(InlineKeyboardButton("🔒 Unlock Link", callback_data="locked"))
+        kb.add(InlineKeyboardButton("🔒 Unlock Now", callback_data="locked"))
 
     return kb
 
@@ -84,7 +82,7 @@ async def start(message: types.Message):
 
 @dp.callback_query_handler(lambda c: c.data == "locked")
 async def locked(call: types.CallbackQuery):
-    await call.answer("❌ Please wait 999 seconds or pay for instant unlock or Subscribe to auto join.", show_alert=True)
+    await call.answer("❌ Please wait 24Hours or pay for instant unlock or Subscribe to auto join.", show_alert=True)
 
 # ADMIN COMMAND
 @dp.message_handler(commands=["approve"])
