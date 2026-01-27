@@ -16,7 +16,7 @@ bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
 # LINKS
-YT1 = "https://youtube.com/@setzis-magicworld?si=tBXL1YWZl-ndhvhm"
+YT1 = "https://www.youtube.com/@HOTMOVIES-q6n"
 UNLOCK_LINK = "https://t.me/+21PYHt4_VQU4Njc1"
 PAYMENT_LINK = "https://t.me/reaks_14bot/pay"
 
@@ -35,7 +35,7 @@ def main_keyboard(user_id):
     )
 
     # Payment option
-    kb.add(InlineKeyboardButton("⚡️ Instant Unlock (25.00php)", url=PAYMENT_LINK))
+    kb.add(InlineKeyboardButton("⚡️ Instant Unlock (55.00php)", url=PAYMENT_LINK))
 
     # Unlock link logic
     if users[user_id]["unlocked"]:
