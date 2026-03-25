@@ -16,7 +16,7 @@ bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
 # LINKS
-YT1 = "https://www.youtube.com/@HOTMOVIES-q6n"
+YT1 = "https://www.youtube.com/@BitesAndFactsPH"
 UNLOCK_LINK = "https://t.me/+21PYHt4_VQU4Njc1"
 PAYMENT_LINK = "https://t.me/reaks_14bot/pay"
 
